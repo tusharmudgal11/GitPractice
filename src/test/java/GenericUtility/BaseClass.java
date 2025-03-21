@@ -28,13 +28,13 @@ public class BaseClass
 	
 	 
 	 
-	 @BeforeSuite
+	 @BeforeSuite  (alwaysRun = true)
 	 public void bsConfig()
 	 {
 		 System.out.println("DataBase Connected Sucessfully");
 	 }
 	 
-	 @BeforeClass
+	 @BeforeClass (alwaysRun = true)
 	 public void bcConfig() throws IOException
 	 {
 		String  URL  =  file.readDataFromPropertyFile("url");
@@ -47,7 +47,7 @@ public class BaseClass
 	 }
 
 	 
-	 @BeforeMethod
+	 @BeforeMethod(alwaysRun = true)
 	 public void bmConfig() throws IOException
 	 {
 	 String USERNAME = file.readDataFromPropertyFile("user_name");
@@ -63,21 +63,21 @@ public class BaseClass
 	 
 	 
 	 }
-	 @AfterMethod
+	 @AfterMethod(alwaysRun = true)
 	 public void amConfig()
 	 {
 		 InvantoryPage ip = new InvantoryPage(driver);
 		 ip.logoutOfApp();
 		 System.out.println("Logout Sucessfully");
 	 }
-	 @AfterClass
+	 @AfterClass(alwaysRun = true)
 	 public  void asConfig()
 	 {
 		driver.quit();
 		System.out.println("Browser close Sucessfully");
 }
 	 
-	 @AfterSuite
+	 @AfterSuite(alwaysRun = true)
 	 public void acConfig()
 	 {
 	 System.out.println("DataBase close Sucessfully");

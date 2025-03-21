@@ -20,7 +20,7 @@ import ObjectRepository.InventoryItemPage;
 public class AddProductToCartTest2 extends BaseClass
 {
 
-	@Test(groups = "SmokeSuite")
+	@Test(groups = "SmokeSuit") 
 	public void tc_001_addproductToCart() throws IOException
 	{
 		

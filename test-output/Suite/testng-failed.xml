@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="RegressionSuit"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="InventoryPage.AddProductToCartTest2">
+        <methods>
+          <include name="amConfig"/>
+          <include name="acConfig"/>
+          <include name="asConfig"/>
+          <include name="bmConfig"/>
+          <include name="tc_001_addproductToCart"/>
+        </methods>
+      </class> <!-- InventoryPage.AddProductToCartTest2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

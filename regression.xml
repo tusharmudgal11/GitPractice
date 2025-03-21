@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="Suite">
-	<group>
+	<groups>
 		<run>
-		<include name = "Regression Suit">
+		<include name="RegressionSuit">
 				
 			</include>
 		</run>
-	</group>
+	</groups>
   <test thread-count="5" name="Test">
 	<classes>
-		<class  name = "InventoryPage.AddProductToCartTest2">
+		<class  name="InventoryPage.AddProductToCartTest2">
 			
 		</class>
 	</classes>
